@@ -24,6 +24,9 @@ app.use(function(req, res, next) {
     next();
 });
 
+app.get('/sxls', function (req, res) {
+  res.send('Si Xales!!!!!!!!!!!!!!!!!')
+});
 
 app.get('/spotify/:client_id/:client_secret', (req, resp) => {
 
