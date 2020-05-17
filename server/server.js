@@ -29,7 +29,7 @@ app.get('/sxls', function (req, res) {
 });
 
 app.post('/demo-angularjs-http-post', function (req, res) {
-  res.send(req)
+  res.json({ username: 'TEST' })
 });
 
 app.get('/spotify/:client_id/:client_secret', (req, resp) => {
