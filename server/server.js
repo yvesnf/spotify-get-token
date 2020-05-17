@@ -29,6 +29,27 @@ app.get('/sxls', function (req, res) {
 });
 
 app.post('/demo-angularjs-http-post', function (req, res) {
+
+    let body = req.body;
+
+    let usuario = {
+
+        n: body.firstName,
+        l: body.lastName,
+        e: body.email
+
+    };
+
+    res.json({
+
+            ok: true,
+            usuario: usuario
+
+        });
+
+});
+
+app.post('/demo-angularjs-http-post', function (req, res) {
   var f=req.body.firstName;
   var l=req.body.lastName;
   var e=req.body.email;
