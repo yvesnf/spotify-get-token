@@ -29,7 +29,12 @@ app.get('/sxls', function (req, res) {
 });
 
 app.post('/demo-angularjs-http-post', function (req, res) {
-  res.json(req.body)
+  var f=req.body.firstName;
+  var l=req.body.lastName;
+  var e=req.body.email;
+  res.json(
+      { f: f, l: l, e: e }
+  );
 });
 
 app.get('/spotify/:client_id/:client_secret', (req, resp) => {
