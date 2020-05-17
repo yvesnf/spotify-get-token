@@ -28,6 +28,13 @@ app.get('/sxls', function (req, res) {
   res.send('Si Xales!!!!!!!!!!!!!!!!!')
 });
 
+app.post('/demo-angularjs-http-post', function (req, res, body) {
+  
+  res.json(
+      body
+  );
+});
+
 app.get('/spotify/:client_id/:client_secret', (req, resp) => {
 
     let client_id = req.params.client_id;
