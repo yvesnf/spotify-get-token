@@ -31,7 +31,7 @@ app.get('/sxls', function (req, res) {
 app.post('/demo-angularjs-http-post', function (req, res, body) {
   
   res.json(
-      body
+      body.email
   );
 });
 
